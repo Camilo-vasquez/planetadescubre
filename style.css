@@ -306,14 +306,14 @@
     color: #f7b32b;
 }
 
-/* Social Links Styling */
+
 .social-link {
     display: inline-block;
     margin: 0 10px;
     font-weight: 500;
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
     background-color: #23272a;
     padding: 15px 0;
@@ -327,7 +327,7 @@
     margin: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .footer-container {
         padding: 0 10px;
@@ -349,10 +349,10 @@
 
 .div2 {
     display: flex;
-    justify-content: left; /* Centra horizontalmente */
+    justify-content: left; 
     padding-left: 200px;
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    align-items: center;
+    height: 100vh; 
 }
 
 
@@ -735,13 +735,13 @@ body {
 
 .economic-packages {
   padding: 50px 20px;
-  background-color: #f9f9f9; /* Diferente fondo para distinguirse de VIP */
+  background-color: #f9f9f9; 
   text-align: center;
 }
 
 .section-title {
   font-size: 2.5rem;
-  color: #28a745; /* Verde para un enfoque económico y accesible */
+  color: #28a745; 
   margin-bottom: 30px;
 }
 
@@ -786,7 +786,7 @@ body {
   display: block;
   text-align: center;
   padding: 10px 20px;
-  background-color: #28a745; /* Verde económico */
+  background-color: #28a745; 
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -796,7 +796,7 @@ body {
 }
 
 .package-card .btn:hover {
-  background-color: #1e7b33; /* Verde más oscuro */
+  background-color: #1e7b33; 
 }
 
 .package-card:hover {
@@ -820,4 +820,106 @@ body {
   border-style: groove;
 
 
+}
+@media screen and (max-width: 1200px) {
+  .div2 {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      margin-top: 50px;
+  }
+
+  .card {
+      margin-left: 0;
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+      font-size: 70px;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .parrafotitulo {
+      font-size: 40px;
+      padding-top: 100px;
+      text-align: center;
+  }
+
+  .boton {
+      margin-left: 0;
+      display: block;
+      text-align: center;
+      width: 80%;
+      margin: 20px auto;
+  }
+
+  .div1 {
+      background-position: center;
+      background-size: cover;
+  }
+
+  .titulo2 {
+      font-size: 60px;
+      margin-top: 100px;
+      text-align: center;
+  }
+
+  .card {
+      width: 100% !important;
+      margin-bottom: 20px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-section {
+      margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo {
+      font-size: 50px;
+      -webkit-text-stroke: 1px black;
+  }
+
+  .parrafotitulo {
+      font-size: 30px;
+      padding-top: 80px;
+  }
+
+  .titulo2 {
+      font-size: 40px;
+      margin-top: 50px;
+  }
+
+  .div1, .div2 {
+      height: auto;
+  }
+
+  .card img {
+      height: 200px;
+      object-fit: cover;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  body {
+      overflow-x: hidden;
+  }
+
+  * {
+      max-width: 100%;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
 }
